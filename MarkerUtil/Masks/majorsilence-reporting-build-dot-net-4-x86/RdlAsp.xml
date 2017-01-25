@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RdlAsp</name>
+    </assembly>
+    <members>
+        <member name="T:fyiReporting.RdlAsp.RdlSilverViewer">
+            <summary>
+            RdlSilverViewer runs a report and provides visual access via a SilverLight control.
+            </summary>
+        </member>
+        <member name="M:fyiReporting.RdlAsp.RdlSilverViewer.GetXaml(System.Int32)">
+            <summary>
+            Get the XAML representation for the specified page.  When null is returned; look at the Errors property for
+            a list of the problems encountered rendering the report.
+            </summary>
+            <param name="pageno">1 for first page, 2 for second, and so on</param>
+            <returns></returns>
+        </member>
+        <member name="P:fyiReporting.RdlAsp.RdlSilverViewer.NoShow">
+            <summary>
+            When true report won't be shown but parameters (if any) will be
+            </summary>
+        </member>
+        <member name="P:fyiReporting.RdlAsp.RdlSilverViewer.PageCount">
+            <summary>
+            Gets the page count 
+            </summary>
+        </member>
+        <member name="P:fyiReporting.RdlAsp.RdlSilverViewer.ReportFile">
+            <summary>
+            Sets the report RDL file name.
+            </summary>
+        </member>
+        <member name="P:fyiReporting.RdlAsp.RdlSilverViewer.Errors">
+            <summary>
+            List of errors encountered when rendering the report.
+            </summary>
+        </member>
+        <member name="M:fyiReporting.RdlAsp.ImageHelper.SaveZipImage(System.Collections.Generic.Dictionary{System.String,System.String},fyiReporting.RDL.ZipOutputStream,fyiReporting.RDL.PageImage)">
+            <summary>
+            SaveZipImage saves the bytes to a zip entry and returns the name.  The passed cache is used
+            to remember file names so that the same image isn't repeatedly saved.
+            </summary>
+            <param name="zipCache"></param>
+            <param name="_ZipStream"></param>
+            <param name="pi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fyiReporting.RdlAsp.ImageHelper.SaveImage(System.String,System.Byte[],System.Web.Caching.Cache)">
+            <summary>
+            SaveImage saves the bytes to a file and returns the file name.  The cache is used to remember
+            the temporary file names and to timeout (and delete) the file.
+            </summary>
+            <param name="ba"></param>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="T:fyiReporting.RdlAsp.RdlListReports">
+            <summary>
+            Summary description for RdlListReports.
+            </summary>
+        </member>
+        <member name="F:fyiReporting.RdlAsp.RdlListReports.Frame">
+            <summary>
+            RdlListReports generates a list of reports available on the server
+            </summary>
+            
+        </member>
+        <member name="T:fyiReporting.RdlAsp.RdlReport">
+            <summary>
+            Summary description for Class1.
+            </summary>
+        </member>
+        <member name="F:fyiReporting.RdlAsp.RdlReport.STATISTICS">
+            <summary>
+            RdlReport generates an HTML report from a RDL file.
+            </summary>
+            
+        </member>
+        <member name="P:fyiReporting.RdlAsp.RdlReport.NoShow">
+            <summary>
+            When true report won't be shown but parameters (if any) will be
+            </summary>
+        </member>
+        <member name="M:fyiReporting.RdlAsp.ReportHelper.GetParameterHtml(fyiReporting.RDL.Report,System.Collections.IDictionary,System.Web.HttpContext,System.String,System.Boolean)">
+            <summary>
+            Returns the HTML needed to represent the parameters of a report.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.RdlAsp.RdlSession">
+            <summary>
+            RdlSession holds some session specific information
+            </summary>
+        </member>
+    </members>
+</doc>

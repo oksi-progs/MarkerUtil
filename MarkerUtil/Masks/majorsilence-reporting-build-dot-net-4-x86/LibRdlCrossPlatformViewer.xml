@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibRdlCrossPlatformViewer</name>
+    </assembly>
+    <members>
+        <member name="M:LibRdlCrossPlatformViewer.PageDrawing.RunPage(fyiReporting.RDL.Page)">
+            <remarks>This the equivalent of RdlViewer.PageDrawing.Draw</remarks>
+        </member>
+        <member name="M:LibRdlCrossPlatformViewer.ReportViewer.LoadReport(System.Uri)">
+            <summary>
+            Loads the report.
+            </summary>
+            <param name='filename'>
+            Filename.
+            </param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:LibRdlCrossPlatformViewer.ReportViewer.LoadReport(System.Uri,System.String)" -->
+    </members>
+</doc>

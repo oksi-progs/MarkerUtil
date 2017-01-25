@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataProviders</name>
+    </assembly>
+    <members>
+        <member name="T:fyiReporting.Data.BaseDataParameter">
+            <summary>
+            BaseDataParameter is the base class for handling parameters
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.GedcomCommand">
+            <summary>
+            LogCommand allows specifying the command for the web log.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.GedcomConnection">
+            <summary>
+            LogConnection handles connections to web log.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.GedcomDataParameter">
+            <summary>
+            XmlDataParameter
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.GedcomDataReader">
+            <summary>
+            LogDataReader handles reading log files
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.iTunesCommand">
+            <summary>
+            iTunesCommand represents the command.  The user is allowed to specify the table needed.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.iTunesConnection">
+            <summary>
+            iTunesConnection handles connections for the iTunes XML file
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.iTunesDataParameter">
+            <summary>
+            iTunesDataParameter
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.iTunesDataReader">
+            <summary>
+            Summary description for iTunesDataReader.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.DataParameterCollection">
+            <summary>
+            XmlDataParameter
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.FileDirCommand">
+            <summary>
+            FileDirCommand allows specifying the command for the web log.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.FileDirConnection">
+            <summary>
+            LogConnection handles connections to web log.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.FileDirDataParameter">
+            <summary>
+            FileDirDataParameter
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.FileDirDataReader">
+            <summary>
+            FileDirDataReader handles reading log files
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.LexCharReader">
+            <summary>
+            char reader simply reads entire file into a string and processes.
+            </summary>
+        </member>
+        <member name="M:fyiReporting.Data.LexCharReader.#ctor(System.IO.TextReader)">
+            <summary>
+            Initializes a new instance of the CharReader class.
+            </summary>
+            <param name="textReader">TextReader with DPL definition.</param>
+        </member>
+        <member name="M:fyiReporting.Data.LexCharReader.GetNext">
+            <summary>
+            Returns the next char from the stream.
+            </summary>
+            <returns>The next char.</returns>
+        </member>
+        <member name="M:fyiReporting.Data.LexCharReader.Peek">
+            <summary>
+            Returns the next char from the stream without removing it.
+            </summary>
+            <returns>The top char.</returns>
+        </member>
+        <member name="M:fyiReporting.Data.LexCharReader.UnGet">
+            <summary>
+            Undoes the extracting of the last char.
+            </summary>
+        </member>
+        <member name="M:fyiReporting.Data.LexCharReader.EndOfInput">
+            <summary>
+            Returns True if end of input was reached; otherwise False.
+            </summary>
+            <returns>True if end of input was reached; otherwise False.</returns>
+        </member>
+        <member name="P:fyiReporting.Data.LexCharReader.Column">
+            <summary>
+            Gets the current column.
+            </summary>
+        </member>
+        <member name="P:fyiReporting.Data.LexCharReader.Line">
+            <summary>
+            Gets the current line.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.Lexer">
+            <summary>
+            A simple Lexer that is used by Parser.
+            </summary>
+        </member>
+        <member name="M:fyiReporting.Data.Lexer.#ctor(System.IO.TextReader)">
+            <summary>
+            Initializes a new instance of the Lexer class with the specified
+            TextReader to lex.
+            </summary>
+            <param name="source">A TextReader to lex.</param>
+        </member>
+        <member name="M:fyiReporting.Data.Lexer.Lex">
+            <summary>
+            Breaks the input stream onto the tokens list and returns it.
+            </summary>
+            <returns>The tokens list.</returns>
+        </member>
+        <member name="T:fyiReporting.Data.LexToken">
+            <summary>
+            Token class that used by Lexer.
+            </summary>
+        </member>
+        <member name="M:fyiReporting.Data.LexToken.#ctor(System.String,fyiReporting.Data.LexTokenTypes)">
+            <summary>
+            Initializes a new instance of the Token class.
+            </summary>
+        </member>
+        <member name="M:fyiReporting.Data.LexToken.ToString">
+            <summary>
+            Returns a string representation of the Token.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.LexTokenList">
+            <summary>
+            Represents a list of the tokens.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.LexTokenTypes">
+            <summary>
+            Types of tokens
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.LogCommand">
+            <summary>
+            LogCommand allows specifying the command for the web log.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.LogConnection">
+            <summary>
+            LogConnection handles connections to web log.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.LogDataParameter">
+            <summary>
+            XmlDataParameter
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.LogDataReader">
+            <summary>
+            LogDataReader handles reading log files
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.MultipleStreamReader">
+            <summary>
+            MultipleStreamReader provides a logical single stream over multiple streams.  Only support ReadLine.
+            </summary>
+        </member>
+        <member name="M:fyiReporting.Data.MultipleStreamReader.#ctor(System.String)">
+            <summary>
+            Constructor taking a path list string.  Files are separated with blanks.  
+            If a file contains a blank then it should be enclosed with quotes (").
+            </summary>
+            <param name="pathlist"></param>
+        </member>
+        <member name="T:fyiReporting.Data.TxtCommand">
+            <summary>
+            TxtCommand allows specifying the command for a text file.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.TxtConnection">
+            <summary>
+            LogConnection handles connections to web log.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.TxtDataParameter">
+            <summary>
+            TxtDataParameter
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.TxtDataReader">
+            <summary>
+            TxtDataReader handles reading txt files
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.WebServiceCommand">
+            <summary>
+            WebServiceCommand 
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.WebServiceConnection">
+            <summary>
+            WebServiceConnection handles connections for WebServices  
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.WebServiceDataParameter">
+            <summary>
+            WebServiceDataParameter
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.WebServiceDataReader">
+            <summary>
+            Summary description for Class1.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.WebServiceWsdl">
+            <summary>
+            WebServiceWsdl handles generation and caching of Assemblies containing WSDL proxies
+              It also will invoke proxies with the proper arguments.  These arguments must be 
+              provided as a WebServiceParameter.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.XmlCommand">
+            <summary>
+            Summary description for Class1.
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.XmlConnection">
+            <summary>
+            XmlConnection handles connections for XML  
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.XmlDataParameter">
+            <summary>
+            XmlDataParameter
+            </summary>
+        </member>
+        <member name="T:fyiReporting.Data.XmlDataReader">
+            <summary>
+            Summary description for XmlDataReader.
+            </summary>
+        </member>
+    </members>
+</doc>

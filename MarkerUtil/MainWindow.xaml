@@ -1,0 +1,21 @@
+﻿<Window x:Class="MarkerUtil.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarkerUtil"
+        xmlns:properties="clr-namespace:MarkerUtil.Properties"
+        mc:Ignorable="d"
+        Title="MarkerUtil" Height="350" Width="525" ResizeMode="NoResize" WindowState="Maximized" WindowStartupLocation="CenterScreen" ScrollViewer.VerticalScrollBarVisibility="Disabled" Loaded="Window_Loaded" WindowStyle="None">
+    <DockPanel >
+        <DockPanel Name ="panelCaption"  LastChildFill="True" HorizontalAlignment="Stretch" DockPanel.Dock="Top" Height="54" Margin="0,0,0,10" Background="{DynamicResource TitleBarBackgroundBrush}" >
+            <Image DockPanel.Dock="Left" x:Name="imageLogo" Source="pack://siteoforigin:,,,/Logo.png" Stretch="Fill" MinWidth="100" MinHeight="35" StretchDirection="DownOnly"/>
+            <Label  x:Name="labelCaption" Content="Управления принтерами фасовочной линии" FontStyle="Italic" FontWeight="Bold" Margin="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+        </DockPanel>
+        <Border BorderBrush="#FF000000" BorderThickness="2">
+            <Grid DockPanel.Dock="Top" Margin="0,3,0,0">
+                <Frame x:Name="MainFrame" Padding="5"/>
+            </Grid>
+        </Border>
+    </DockPanel>
+</Window>

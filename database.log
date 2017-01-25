@@ -1,0 +1,14 @@
+Header checksum is valid.
+Source      : D:\Develop\Users\Корзюков И\Marker\MarkerUtil\database.sdf
+Destination : n/a
+Verifying - verMajor: 4, verMinor: 0, verBuild: 8876, verPoint: 1
+Time - 2017-18-01 15:07:45.140
+
+ All Pages have valid checksum.
+Parse the db file and build list of tables ... DONE.
+Cleanup Page list ... DONE.
+Scan bad pages ... DONE.
+Parse SysObjects table ... DONE.
+Copy Tables ... DONE.
+Verify Indices ... DONE.
+

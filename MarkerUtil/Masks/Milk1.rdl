@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description>
+  </Description>
+  <Author>
+  </Author>
+  <PageHeight>40mm</PageHeight>
+  <PageWidth>80mm</PageWidth>
+  <Width>80mm</Width>
+  <TopMargin>0mm</TopMargin>
+  <LeftMargin>0mm</LeftMargin>
+  <RightMargin>0mm</RightMargin>
+  <BottomMargin>0mm</BottomMargin>
+  <DataSets>
+    <DataSet Name="Data">
+      <Query>
+        <DataSourceName>DS1</DataSourceName>
+        <CommandText>SELECT Id, Name, Trademark, Code, Valid, Standart, Manufacturer, Content, Conditions, Calories, Barcode1, Barcode2, Barcode3, ProducedDate, Consignment FROM goods</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Id">
+          <DataField>Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Trademark">
+          <DataField>Trademark</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Code">
+          <DataField>Code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Valid">
+          <DataField>Valid</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Standart">
+          <DataField>Standart</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Manufacturer">
+          <DataField>Manufacturer</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Content">
+          <DataField>Content</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Conditions">
+          <DataField>Conditions</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calories">
+          <DataField>Calories</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Barcode1">
+          <DataField>Barcode1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Barcode2">
+          <DataField>Barcode2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Barcode3">
+          <DataField>Barcode3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProducedDate">
+          <DataField>ProducedDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Consignment">
+          <DataField>Consignment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <PageHeader>
+    <Height>0mm</Height>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <Body>
+    <Height>146.8pt</Height>
+    <ReportItems>
+      <List Name="List1">
+        <DataSetName>Data</DataSetName>
+        <Height>113.81pt</Height>
+        <NoRows>Query returned no rows!</NoRows>
+        <ReportItems>
+          <Textbox Name="Name">
+            <Top>0.00pt</Top>
+            <Left>0.00pt</Left>
+            <Width>226.58pt</Width>
+            <Height>11.30pt</Height>
+            <Value>=Fields!Label.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontStyle>Normal</FontStyle>
+              <FontWeight>Bold</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <BorderStyle />
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="Trademark">
+            <Top>9.40pt</Top>
+            <Left>0.00pt</Left>
+            <Width>227.54pt</Width>
+            <Height>14.32pt</Height>
+            <Value>=Fields!Trademark.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Center</TextAlign>
+              <FontFamily>Tahoma</FontFamily>
+              <BorderStyle />
+              <BorderColor />
+              <BorderWidth />
+              <FontWeight>Bold</FontWeight>
+              <FontSize>11pt</FontSize>
+            </Style>
+          </Textbox>
+          <Textbox Name="Manufacturer">
+            <Top>22.8pt</Top>
+            <Left>0.0pt</Left>
+            <Width>102.07pt</Width>
+            <Height>6.79pt</Height>
+            <Value>Изготовитель: АО ТМК «Тверца»</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>6pt</FontSize>
+              <FontFamily>Tahoma</FontFamily>
+              <BorderStyle />
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+            <CanShrink>false</CanShrink>
+          </Textbox>
+          <Textbox Name="Standard">
+            <Top>22.8pt</Top>
+            <Left>152.6pt</Left>
+            <Width>73.77pt</Width>
+            <Height>7.56pt</Height>
+            <Value>=Fields!Standart.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>6pt</FontSize>
+              <BorderStyle />
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="Address">
+            <Top>29.9pt</Top>
+            <Left>0.0pt</Left>
+            <Width>226.64pt</Width>
+            <Height>6.79pt</Height>
+            <Value>Адрес: 172001,Тверская обл.,г.Торжок,ул.М.Горького,57,тел.(48251)9-14-52</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>6pt</FontSize>
+              <FontFamily>Tahoma</FontFamily>
+              <BorderStyle />
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="Conditions">
+            <Top>45.2pt</Top>
+            <Left>0.0pt</Left>
+            <Width>226.84pt</Width>
+            <Height>6.82pt</Height>
+            <Value>=Fields!Conditions.Value</Value>
+            <CanGrow>true</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>6pt</FontSize>
+              <FontFamily>Tahoma</FontFamily>
+            </Style>
+          </Textbox>
+          <Textbox Name="ProducedDate">
+            <Top>97.8pt</Top>
+            <Left>89.2pt</Left>
+            <Width>138.41pt</Width>
+            <Height>15.06pt</Height>
+            <Value>=Format(Fields!ProducedDate.Value, "dd.MM.yyyy")</Value>
+            <CanGrow>true</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontFamily>Tahoma</FontFamily>
+              <TextAlign>Center</TextAlign>
+              <BorderStyle />
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="Consignment">
+            <Top>97.8pt</Top>
+            <Left>0.0pt</Left>
+            <Width>42.19pt</Width>
+            <Height>15.07pt</Height>
+            <Value>=Fields!Consignment.Value</Value>
+            <CanGrow>true</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Textbox>
+          <CustomReportItem Name="CustomReportItem1">
+            <Type>BarCode EAN-13</Type>
+            <Height>34.57pt</Height>
+            <Width>92.56pt</Width>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>NumberSystem</Name>
+                <Value>=Fields!Barcode2.Value</Value>
+              </CustomProperty>
+              <CustomProperty>
+                <Name>ManufacturerCode</Name>
+                <Value>=Fields!Barcode1.Value</Value>
+              </CustomProperty>
+              <CustomProperty>
+                <Name>ProductCode</Name>
+                <Value>=Fields!Barcode3.Value</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <Left>116.3pt</Left>
+            <Top>52.9pt</Top>
+            <Style>
+              <BorderStyle />
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </CustomReportItem>
+          <Textbox Name="Textbox1">
+            <Height>7.49pt</Height>
+            <Width>227.23pt</Width>
+            <Value>Номер партии                      Изготовлено и упаковано: (число,месяц,год)</Value>
+            <ZIndex>1</ZIndex>
+            <Left>0.0pt</Left>
+            <Top>88.3pt</Top>
+            <Style>
+              <FontSize>6pt</FontSize>
+              <FontFamily>Tahoma</FontFamily>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox2">
+            <Height>6.75pt</Height>
+            <Width>226.77pt</Width>
+            <Value>=Fields!Content.Value</Value>
+            <ZIndex>1</ZIndex>
+            <Left>0.0pt</Left>
+            <Top>37.6pt</Top>
+            <Style>
+              <FontSize>6pt</FontSize>
+              <FontFamily>Tahoma</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Width>227.62pt</Width>
+        <Left>0.00pt</Left>
+        <Top>0.00pt</Top>
+        <Style>
+          <FontSize>10pt</FontSize>
+        </Style>
+      </List>
+      <Image Name="Image1">
+        <Height>31.62pt</Height>
+        <Width>93.35pt</Width>
+        <Left>1.6pt</Left>
+        <Top>53.5pt</Top>
+        <Style>
+          <BorderStyle />
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+        <Source>Embedded</Source>
+        <Value>Milk</Value>
+      </Image>
+    </ReportItems>
+  </Body>
+  <PageFooter>
+    <Height>0mm</Height>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <EmbeddedImages>
+    <EmbeddedImage Name="Milk">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAHwAAAAqCAIAAAD+q6gDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABDVJREFUaEPtmS1bIzEUhStX8hcqkUgsEonEsg6JxFSsrERikfwH1MqVyLVIJJI9zTm5pMlMJpkvujCv4EnOvclM3xmGtqzeF2YnJ/3p6Wnl2Ww2ShcG0yrdjGMA44v3EemQTtEarzYYsLowhO8iHecPNJkGuKKuTqqk7x41rOb5OT06UjHO+bTSIzKuaqRvKqS71zgVhdLRqdHs0nGszF0/1Z2+e4mTUS4dpGMQTWemRnr9nX58fPzLsfWcn5+zdH19HZUAE+vBgInK2+3JyQnygdI5BpwOAX6oqIqvLB1wn3AQjcvpfO1oSC8ADpQunFb65eWlIg8MsvTy8sLkzcMpeHh4YM/d3Z0iz9XVFfJG6VwCNPcgCV2kPUyA5k30uJ0zTCv94uKCyePj4w8PS8/Pz8ih/ujoiAnuYjbDNRNcISa4eGgDXJ5Kx3lyiaGCc6qRxxLX+AHDGaiRXv+HdDbpBheGRGFjG8N+YHmhFmMm6fbEMEy6XQb8AWBzKv3s7IwJyUg31NpEWGVzOTAAJ0DrE1DqtNRHOn4arjfmEKQbWhOgQjF4mW5dzrUDVWvYDdouQLV0jg02R4wu3d7PkNmkRy+2N9rOUySd0/BC79w7WI04EOlsDs5aWIltjeClsYfYJuluAWlpb5XpqpDulu8SC9uokq75arVer9k8XLr6HOk0SgDDDOnt9WFw/6nLkERTo0g6xzbt5BOlq8OhqB31eZRWgoVtctvIHQl7mW5SuHsq/fX19Y8DH0RZonTw24Mqkx7SVfAodURJNCWNYSFYWKjFyB0J9zXPxjhM6Uo9Sh2WpIOxwG7jSI9ucKO3dHzK/+u4ublhyaTzYgBLyqVr7mASYSUbROPhYKsRpLcZB72l39/fMzHSZ3qPdy+ccpwSVtMx4HQg2KendCwDu/cl2fdGhbvPJj0Pm9MxiKZDwD6FWoy9czKQYCNNAqaQbu/TM9+99JDOTk1apkDzAWCTntKxzLCEpxVi1TyHLx2kST+wSaEWo/WoByW99rsXtmniSBPQGNaCHRbpO9CjkYcLNfEwBJr3AssPVHrJdy9jPV7QgJ/h+TPkIKItLwfLF+lCrR4mLEUgr7UW0mN583k0Ggd4H6mOLCY9/B8pPpSC29tblqAbIT40mfTT01N22rNou90yAe7fqG/8bNV5p7ehjn0ypRKwdhzpjW/SiTqymHTcvLjHyaMDl4El3MUI7aYG6/WanfzvM8AvChOuBUiQZ6RzIUkTwDAiU+oEC7+vdC4h6W+kCh6lnsYwhELSbflIGEc6aPReuLtJn4hUugoORQkqe5R6GkODcqMGhLSkeTG5BXYkgN3LryekTArOR0dy8AyJonbU51BUTCgEVDkJqT7woSEBDkVdqNujdEb+Y+ly5lBUg1Y6FM3FV5CueT1av0gvZyxfi/RvwSL9E1ikz877+z88sn0BWKtFVwAAAABJRU5ErkJggg==</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <DataSources>
+    <DataSource Name="DS1">
+      <ConnectionProperties>
+        <DataProvider>SQLce</DataProvider>
+        <ConnectString>={?ConnectionString}</ConnectString>
+        <IntegratedSecurity>false</IntegratedSecurity>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <ReportParameters>
+    <ReportParameter Name="ConnectionString">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Data Source=d:\Develop\Users\Корзюков И\Marker\MarkerUtil\database.sdf</Value>
+        </Values>
+      </DefaultValue>
+      <Nullable>false</Nullable>
+      <AllowBlank>false</AllowBlank>
+      <MultiValue>false</MultiValue>
+      <Prompt>
+      </Prompt>
+    </ReportParameter>
+  </ReportParameters>
+</Report>
